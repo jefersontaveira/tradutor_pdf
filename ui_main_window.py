@@ -1,6 +1,5 @@
-# Arquivo: ui_main_window.py
+# ui_main_window.py
 
-# Todas as importações necessárias para a UI
 import sys
 from PyQt6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout,
@@ -8,7 +7,7 @@ from PyQt6.QtWidgets import (
 )
 from googletrans import LANGUAGES
 
-# A classe que define a interface, e nada mais.
+# A classe que define a interface.
 class TradutorPDFApp(QWidget):
     def __init__(self):
         super().__init__()
@@ -18,7 +17,7 @@ class TradutorPDFApp(QWidget):
 
         # --- Layouts ---
         layout_principal = QVBoxLayout(self)
-        layout_principal.setContentsMargins(20, 20, 20, 20)
+        layout_principal.setContentsMargins(40, 40, 40, 40)
         layout_principal.setSpacing(15)
         layout_arquivo = QHBoxLayout()
         layout_idiomas = QHBoxLayout()
